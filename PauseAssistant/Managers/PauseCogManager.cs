@@ -16,7 +16,7 @@ namespace PauseAssistant.Managers
 
         public void Initialize()
         {
-
+            
         }
     }
 }
