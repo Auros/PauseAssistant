@@ -23,6 +23,7 @@ namespace PauseAssistant
                 Container.BindInterfacesTo<MenuAssetCollector>().AsSingle();
             });
             zenjector.OnGame<GamePauseCoreInstaller>();
+            zenjector.OnGame<VanillaModuleInstaller>();
         }
 
         [OnEnable]
