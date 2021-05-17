@@ -1,0 +1,5 @@
+﻿<bg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://monkeymanboy.github.io/BSML-Docs/ https://raw.githubusercontent.com/monkeymanboy/BSML-Docs/gh-pages/BSMLSchema.xsd">
+  <modal show-event="show" hide-event="hide" clickerino-offerino-closerino="true" size-delta-x="60" size-delta-y="40">
+    <text text="abcbadq more like good mod" align="Center" />
+  </modal>
+</bg>

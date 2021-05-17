@@ -1,5 +1,6 @@
 ﻿using IPA;
 using PauseAssistant.Collectors;
+using PauseAssistant.Installers;
 using SiraUtil;
 using SiraUtil.Zenject;
 using IPALogger = IPA.Logging.Logger;
@@ -21,6 +22,7 @@ namespace PauseAssistant
             {
                 Container.BindInterfacesTo<MenuAssetCollector>().AsSingle();
             });
+            zenjector.OnGame<GamePauseCoreInstaller>();
         }
 
         [OnEnable]

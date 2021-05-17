@@ -37,6 +37,14 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <None Remove="UI\pause-ui.bsml" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Reference Include="BSML">
+          <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Beat Saber\Plugins\BSML.dll</HintPath>
+          <Private>False</Private>
+        </Reference>
         <Reference Include="HMRendering">
           <HintPath>$(BeatSaberDir)\\Beat Saber_Data\Managed\HMRendering.dll</HintPath>
           <Private>False</Private>
@@ -121,6 +129,7 @@
 
     <ItemGroup>
         <EmbeddedResource Include="manifest.json" />
+        <EmbeddedResource Include="UI\pause-ui.bsml" />
     </ItemGroup>
 
     <ItemGroup>	
