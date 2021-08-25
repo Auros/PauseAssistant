@@ -18,7 +18,7 @@ namespace PauseAssistant
                 Container.BindLoggerAsSiraLogger(logger);
                 Container.Bind<AssetStore>().AsSingle();
             });
-            zenjector.On<MenuInstaller>().Pseudo(Container =>
+            zenjector.On<MainSettingsMenuViewControllersInstaller>().Pseudo(Container =>
             {
                 Container.BindInterfacesTo<MenuAssetCollector>().AsSingle();
             });

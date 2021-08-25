@@ -21,5 +21,6 @@ namespace PauseAssistant.Models
         }
 
         public override bool IsSlider => true;
+        public override bool IsBool => false;
     }
 }

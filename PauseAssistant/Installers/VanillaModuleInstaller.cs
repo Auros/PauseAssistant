@@ -1,5 +1,6 @@
 ﻿using PauseAssistant.Models;
 using PauseAssistant.Modules;
+using System;
 using Zenject;
 
 namespace PauseAssistant.Installers
@@ -8,7 +9,8 @@ namespace PauseAssistant.Installers
     {
         public override void InstallBindings()
         {
-            Container.Bind<AssistantModule>().To<VolumeSliderModule>().AsSingle();
+            Container.Bind(typeof(AssistantModule)).To<StaticLightsModule>().AsSingle();
+            Container.Bind(typeof(AssistantModule), typeof(IDisposable)).To<VolumeSliderModule>().AsSingle();
         }
     }
 }

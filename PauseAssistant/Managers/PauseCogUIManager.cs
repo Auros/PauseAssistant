@@ -23,6 +23,9 @@ namespace PauseAssistant.Managers
         [UIValue("modules")]
         private readonly List<AssistantModule> _modules = new List<AssistantModule>();
 
+        [UIValue("size")]
+        private float _size;
+
         private FloatingScreen _floatingScreen = null!;
         private Canvas _screenCanvas = null!;
 
@@ -36,7 +39,12 @@ namespace PauseAssistant.Managers
                 {
                     _modules.Add(slider);
                 }
+                else if (module is BoolModule @bool)
+                {
+                    _modules.Add(@bool);
+                }
             }
+            _size = _modules.Count * 8;
         }
 
         public void Show()

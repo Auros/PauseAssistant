@@ -9,5 +9,8 @@ namespace PauseAssistant.Models
 
         [UIValue("is-slider")]
         public abstract bool IsSlider { get; }
+
+        [UIValue("is-bool")]
+        public abstract bool IsBool { get; }
     }
 }
